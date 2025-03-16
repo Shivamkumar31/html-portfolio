@@ -1,0 +1,86 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: white;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background: #1e1e1e;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: cyan;
+}
+
+/* Sections */
+.container {
+    padding: 60px 20px;
+}
+h1, h2, h3 {
+    margin: 10px 0;
+    color: cyan;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid cyan;
+    box-shadow: 0px 0px 20px cyan;
+    transition: transform 0.3s;
+}
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Social Icons */
+.social-icons img {
+    width: 40px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Animated Text */
+#animated-text {
+    color: cyan;
+    font-weight: bold;
+    animation: flicker 1.5s infinite alternate;
+}
+@keyframes flicker {
+    0% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+/* Style for Paragraph */
+p {
+    color: #b0b0b0; /* Light gray text for readability */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    font-size: 18px; /* Adjusted font size */
+    text-align: center; /* Center align the text */
+    line-height: 1.6; /* Improve readability */
+    max-width: 80%; /* Prevents text from stretching too wide */
+    margin: 20px auto; /* Centering horizontally */
+}
